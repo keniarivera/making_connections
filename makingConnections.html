@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="./makingConnections.css">
+    </head>
+    <body>
+        <!---: Start of Navbar Container -->
+        <div id="nav-bar">
+            <ul id="nav-left">
+                <li><h1 id="profile">Profile</h1></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href=""> Find Connections</a></li>
+            </ul>
+            <button id="nav-right">Sign Out</button>
+        </div>
+        <!---: Start of Main Container-->
+        <div id="main-container">
+            <div class="column-left">
+                <div id="user-card">  
+                    <div id="user-card-header">
+                        <img id="jane-img" src="./profilePage-images/jane-m.jpg" alt="jane-m">
+                    </div>
+                    <div id="profile-content">
+                        <h1 id="jane-doe">Jane Doe</h1>
+                        <div class="location">
+                            <img id="map-marker" src="./profilePage-icons/map-marker.png" alt="map-marker">
+                            <p id="cont-p1"><strong>Seattle</strong></p>
+                        </div>  
+                        <p class="cont-p2"><strong>Developer | Engineer | Problem Solver</strong></p>
+                        <p class="cont-p2"><strong>Master of shadows and the Internet!</strong></p>
+                        <div id="gear"> 
+                            <img id="gear" src="./profilePage-icons/gear.png" alt="gear">
+                            <a class="cont-p2" onclick="changeName('#jane-doe')" >edit profile</a>
+                        </div>
+                    </div>
+                </div>
+                <!---: start of Education container -->
+                <div id="education">
+                    <div id="edu-header">
+                        <h3 id="education-word" >Education</h3>
+                    </div>
+                    <div id="education-content">
+                        <h2 class="ed-cont" >Coding Dojo - Full Stack Bootcamp</h2>
+                        <h4 class="ed-cont"id="date">Dec 2019 - Mar 2020</h4>
+                        <h3 class="ed-cont"id="stacks">Triple black belt in Python, Mern, and C#...</h3>
+                    </div>
+                </div>
+            </div>
+            <div class=" column-right">
+                <!---: Start of Connection Requests container -->
+                <div id="connection-requests">
+                    <div class="header">
+                        <button id="num-2">2</button> 
+                        <p>Connection Requests</p>
+                    </div>
+                    <div class="person" id="person1">
+                        <img class="images" src="./profilePage-images/todd-s.jpg" alt="Todd E.">
+                        <p class="names">Todd E</p>
+                        <img class="icons" id="first-icon" onclick="removeUser('#person1'), decreaseRequests('#num-2'), increasesConnections('#num')"  src="./profilePage-icons/accept-circle.png" alt="accept-circle">
+                        <img class="icons" id="second-icon" onclick="removeUser('#person1'), decreaseRequests('#num-2')" src="./profilePage-icons/close-circle.png" alt="close-circle">
+                    </div>
+                    <div class="person" id="person2">
+                        <img class="images" src="./profilePage-images/phil-s.jpg" alt="Phil K.">
+                        <p class="names" id="phil-k">Phil K</p>
+                        <img class="icons" id="first-icon" onclick="removeUser('#person2'), decreaseRequests('#num-2'), increasesConnections('#num')" src="./profilePage-icons/accept-circle.png" alt="accept-circle">
+                        <img class="icons" id="second-icon" onclick="removeUser('#person2'), decreaseRequests('#num-2')" src="./profilePage-icons/close-circle.png" alt="close-circle">
+                    </div>
+                </div>
+                <!---: Start of Your Connections container -->
+                <div id="your-connections">
+                    <div class="header">
+                        <p> <span id="num-500"><span id="num">500</span>+</span> Your Connections</p>
+                    </div>
+                    <div class="person">
+                        <img class="images" src="./profilePage-images/adrien-s.jpg" alt="Adrien D.">
+                        <p class="names">Adrien D</p>
+                    </div>
+                    <div class="person">
+                        <img class="images" src="./profilePage-images/anne-s.jpg" alt="Anne J.">
+                        <p class="names">Anne J</p>
+                    </div>
+                        <div class="person">
+                        <img class="images" src="./profilePage-images/alayne-s.jpg" alt="Alayne T.">
+                        <p class="names">Alayne T</p>
+                    </div>
+                    <div class="person">
+                        <img class="images" src="./profilePage-images/arry-s.jpg" alt="Arry Y.">
+                        <p class="names">Arry Y</p>
+                    </div>
+                </div>
+                <!---: View More container -->
+                <div id="view-more-div">
+                    <p id="view-more-word"><a href="future-link.com">View More</a></p>
+                </div>
+            </div>
+        </div>
+        <script src="./makingConnections.js"></script>
+    </body>
+</html>
+
+

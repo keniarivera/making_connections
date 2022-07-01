@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Start of Navbar Container */
+#nav-bar{
+    height: 100px;
+    width: 1440px;
+    background-color: black;
+    margin: 0px auto;
+    align-items: center; /* if gone, it's not centered */
+    display: flex;  /* side by side 'navbar' and 'button' */
+    justify-content: space-between;
+    padding: 20px 200px;
+    margin-bottom: 40px; /* for col-left and right */
+}
+#nav-left{
+    padding: 50px;
+    display:flex;
+    list-style: none; /* takes away bullet points */
+    align-items: center; /* if gone, it's not centered */
+    height: 50px;
+    width: 700px;
+    justify-content: space-evenly;  /* Won't work without height and width */
+    color: white;
+    font-family: sans-serif;
+    
+}
+/* all the anchor tags inside of nav-left */
+#nav-left a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    justify-content: space-evenly;
+}
+#nav-right{ /* The button */
+    background-color: #37A2B8;
+    padding: 0px 10px;
+    margin-right: 90px;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color:#D8EAEE;
+
+}
+
+/* Start of Main Container */
+#main-container{
+    height: 660px;
+    width: 1400px;
+    /* outline: 1px solid orange; */
+    background-color: white;
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+/* Do this to both classes 'column left' and 'column right' */
+.column-left, .column-right{
+    /* outline: 1px solid hotpink; */
+}
+.column-left{
+    flex: 2;            /* Makes it twice as bigger than column right */
+    margin-left: 255px;
+    margin-right: 20px;
+}
+#user-card{
+    height: 400px;
+    width: 535px;
+    outline: 5px solid #CDCDCD;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+#user-card-header{
+    height: 105px;
+    background-color: #37A2B8;
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 80px;
+}
+#jane-img{
+    border-radius: 50%;
+    height: 130px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+#profile-content{
+    margin-left: 40px;
+}
+#jane-doe{
+    font-size: 2.7rem;
+}
+.location{
+    display: flex;
+    margin: 20px 0px;
+    align-items: center;
+    gap: 10px;
+}
+#map-marker{
+    height:30px;
+    margin-right: 5px;;
+}
+#cont-p1{
+    font-size: 1.7rem;
+}
+.cont-p2{
+    font-size: 1.4rem;
+}
+#gear{
+    height: 25px;
+    margin: 15px 0px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-right: 5px;
+}
+
+/* start of Education container */
+#education{
+    height: 195px;
+    width: 535px;
+    outline: 5px solid #CDCDCD;
+    margin: 0 auto;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+#edu-header{
+    height: 60px;
+    background-color: #333333;
+    color:white;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    padding: 20px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+#education-word{
+    margin-left: 20px;
+}
+#education-content{
+    margin-left: 40px;
+    font-weight: 700;
+}
+.ed-cont{
+    margin-bottom: 20px;
+}
+#date{
+    font-size: 1.4rem;;
+    color: #858585;
+}
+#stacks{
+    font-style: 2rem;
+    font-size: 1.3rem;
+}
+
+/*Start of Connection Requests Container*/
+.column-right{
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 200px;
+}
+/* Ids in line: 96,109,118 could have gone in a class? */
+#connection-requests{
+    height: 200px;
+    /* width: 330px; */
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    /* margin-right: 150px; */
+    margin-right: 185px;
+    margin-left: 20px;
+    outline: 5px solid #CDCDCD;
+}
+.header{
+    height: 70px;
+    background-color: #333333;
+    color:white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding: 30px;
+    margin-bottom: 15px;
+    /* border-top: none; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+#num-2{   /* trying to get num2 circular instead of oval */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+.person{
+    display:flex;
+    /* border-top: none; */
+    /* border: 1px solid gray; */
+    margin-right: 5px;
+}
+.images{
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.names{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+.icons{
+    height: 35px;
+}
+#first-icon{
+    margin-left: 60px;
+}
+#second-icon{
+    margin-left: 10px;
+}
+#phil-k{
+    margin-right: 10px;
+}
+
+/*Start of Your Connections Container*/
+#your-connections{
+    height: 330px;
+    /* width: 330px; */
+    width: 280px;
+    outline: 5px solid #CDCDCD;
+    margin: 0 auto;
+    /* margin-right: 150px; */
+    margin-right: 185px;
+    margin-left: 20px;
+}
+#num-500{
+    border-radius: 50%;   /* makes it a circle*/
+    background-color: #CCCCCC;
+    color: black;
+    padding: 5px;
+    margin-right: 10px;
+    
+}
+
+/* For View More Container*/
+#view-more-div{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    outline: 5px solid #CDCDCD;
+    height: 45px;
+    width: 280px;
+    margin-left: 20px;
+}
+#view-more-word{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+#view-more{
+    height: 55px;
+    width: 280px;
+    outline: 5px solid #CDCDCD;
+    margin-right: 185px;
+    margin-left: 20px;
+}
+
+/* comment */
